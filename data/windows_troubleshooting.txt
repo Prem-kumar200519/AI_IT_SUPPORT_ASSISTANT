@@ -1,0 +1,244 @@
+====================================================
+Issue: Windows Running Slow
+====================================================
+
+Symptoms:
+
+- Computer takes a long time to start.
+- Applications open slowly.
+- High CPU usage.
+
+Diagnosis:
+
+Open Task Manager.
+
+Shortcut:
+
+Ctrl + Shift + Esc
+
+Check:
+
+- CPU Usage
+- Memory Usage
+- Disk Usage
+
+Solution:
+
+1. Disable unnecessary startup programs.
+2. Restart the computer.
+3. Scan for malware.
+4. Remove temporary files.
+
+----------------------------------------------------
+
+====================================================
+Issue: Blue Screen of Death (BSOD)
+====================================================
+
+Symptoms:
+
+Blue screen with error message.
+
+Diagnosis:
+
+Restart the computer.
+
+Check Windows Event Viewer.
+
+Solution:
+
+1. Update drivers.
+2. Run System File Checker.
+
+Command:
+
+sfc /scannow
+
+3. Check RAM.
+4. Remove recently installed software.
+
+----------------------------------------------------
+
+====================================================
+Issue: WiFi Not Working
+====================================================
+
+Symptoms:
+
+No internet connection.
+
+Diagnosis:
+
+Check WiFi adapter.
+
+Open:
+
+Settings → Network & Internet
+
+Run Windows Network Troubleshooter.
+
+Solution:
+
+1. Restart router.
+2. Disable and enable WiFi adapter.
+3. Update WiFi driver.
+
+----------------------------------------------------
+
+====================================================
+Issue: Printer Offline
+====================================================
+
+Symptoms:
+
+Printer does not print.
+
+Diagnosis:
+
+Check printer connection.
+
+Open:
+
+Control Panel → Devices and Printers
+
+Solution:
+
+1. Restart printer.
+2. Restart Print Spooler.
+3. Reinstall printer driver.
+
+----------------------------------------------------
+
+====================================================
+Issue: Windows Update Failed
+====================================================
+
+Symptoms:
+
+Windows update stops or fails.
+
+Diagnosis:
+
+Open:
+
+Settings → Windows Update
+
+Solution:
+
+1. Restart computer.
+2. Run Windows Update Troubleshooter.
+3. Clear SoftwareDistribution folder.
+
+----------------------------------------------------
+
+====================================================
+Issue: USB Device Not Detected
+====================================================
+
+Symptoms:
+
+USB drive is not recognized.
+
+Diagnosis:
+
+Try another USB port.
+
+Open Device Manager.
+
+Solution:
+
+1. Update USB drivers.
+2. Restart computer.
+3. Test the USB device on another computer.
+
+----------------------------------------------------
+
+====================================================
+Issue: High Disk Usage
+====================================================
+
+Symptoms:
+
+Disk usage stays at 100%.
+
+Diagnosis:
+
+Open Task Manager.
+
+Check Disk Usage.
+
+Solution:
+
+1. Disable unnecessary startup services.
+2. Stop Windows Search temporarily.
+3. Check for malware.
+
+----------------------------------------------------
+
+====================================================
+Issue: Task Manager Not Opening
+====================================================
+
+Symptoms:
+
+Task Manager does not open.
+
+Diagnosis:
+
+Run:
+
+taskmgr
+
+Solution:
+
+Restart Windows Explorer.
+
+Run System File Checker.
+
+Command:
+
+sfc /scannow
+
+----------------------------------------------------
+
+====================================================
+Issue: Computer Won't Boot
+====================================================
+
+Symptoms:
+
+Black screen after power on.
+
+Diagnosis:
+
+Check power supply.
+
+Disconnect external devices.
+
+Solution:
+
+1. Boot into Safe Mode.
+2. Run Startup Repair.
+3. Restore Windows using System Restore.
+
+----------------------------------------------------
+
+====================================================
+Issue: Windows Activation Error
+====================================================
+
+Symptoms:
+
+Windows reports it is not activated.
+
+Diagnosis:
+
+Open:
+
+Settings → Activation
+
+Solution:
+
+1. Verify product key.
+2. Connect to the internet.
+3. Run Activation Troubleshooter.

@@ -1,0 +1,241 @@
+========================================
+Linux Command: pwd
+========================================
+
+Purpose:
+Displays the current working directory.
+
+Syntax:
+pwd
+
+Example:
+pwd
+
+Example Output:
+/home/prem/Documents
+
+----------------------------------------
+
+Linux Command: ls
+========================================
+
+Purpose:
+Lists files and directories.
+
+Syntax:
+ls
+
+Examples:
+ls
+ls -l
+ls -a
+ls -lh
+
+Useful Options:
+
+-l
+Shows detailed information.
+
+-a
+Shows hidden files.
+
+-h
+Shows file sizes in human-readable format.
+
+----------------------------------------
+
+Linux Command: cd
+========================================
+
+Purpose:
+Changes the current directory.
+
+Syntax:
+cd directory_name
+
+Examples:
+
+cd Documents
+
+cd ..
+
+cd /
+
+----------------------------------------
+
+Linux Command: mkdir
+========================================
+
+Purpose:
+Creates a new directory.
+
+Syntax:
+mkdir folder_name
+
+Example:
+
+mkdir Project
+
+----------------------------------------
+
+Linux Command: rm
+========================================
+
+Purpose:
+Deletes files or folders.
+
+Syntax:
+
+rm filename
+
+rm -r foldername
+
+Example:
+
+rm notes.txt
+
+rm -r oldfolder
+
+----------------------------------------
+
+Linux Command: cp
+========================================
+
+Purpose:
+Copies files.
+
+Syntax:
+
+cp source destination
+
+Example:
+
+cp file1.txt backup.txt
+
+----------------------------------------
+
+Linux Command: mv
+========================================
+
+Purpose:
+Moves or renames files.
+
+Syntax:
+
+mv source destination
+
+Example:
+
+mv old.txt new.txt
+
+----------------------------------------
+
+Linux Command: chmod
+========================================
+
+Purpose:
+Changes file permissions.
+
+Syntax:
+
+chmod permissions filename
+
+Example:
+
+chmod 755 script.sh
+
+----------------------------------------
+
+Linux Command: chown
+========================================
+
+Purpose:
+Changes file ownership.
+
+Syntax:
+
+chown user filename
+
+Example:
+
+chown root file.txt
+
+----------------------------------------
+
+Linux Command: top
+========================================
+
+Purpose:
+Displays running processes.
+
+Syntax:
+
+top
+
+----------------------------------------
+
+Linux Command: ps
+========================================
+
+Purpose:
+Displays currently running processes.
+
+Syntax:
+
+ps
+
+ps -ef
+
+----------------------------------------
+
+Linux Command: df
+========================================
+
+Purpose:
+Shows disk usage.
+
+Syntax:
+
+df -h
+
+----------------------------------------
+
+Linux Command: free
+========================================
+
+Purpose:
+Shows memory usage.
+
+Syntax:
+
+free -h
+
+----------------------------------------
+
+Linux Command: systemctl
+========================================
+
+Purpose:
+Controls Linux services.
+
+Examples:
+
+systemctl status ssh
+
+systemctl restart apache2
+
+systemctl stop nginx
+
+----------------------------------------
+
+Linux Command: journalctl
+========================================
+
+Purpose:
+Displays system logs.
+
+Example:
+
+journalctl
+
+journalctl -xe

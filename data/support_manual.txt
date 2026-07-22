@@ -1,0 +1,24 @@
+WiFi Issue:
+1. Restart router.
+2. Check wireless adapter.
+3. Run network troubleshooter.
+
+Printer Issue:
+1. Check printer power.
+2. Verify USB connection.
+3. Restart printer spooler service.
+
+Email Issue:
+1. Verify internet connection.
+2. Check mail server settings.
+3. Reset email password.
+
+Computer Slow:
+1. Check Task Manager.
+2. Disable startup apps.
+3. Scan for malware.
+
+clri leather 
+1 contant business
+2 kpmu  project
+3 cnp 

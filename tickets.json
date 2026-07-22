@@ -1,0 +1,132 @@
+[
+    {
+        "ticket_id": "INC-1001",
+        "issue": "wifi is not working",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "11:51 AM"
+    },
+    {
+        "ticket_id": "INC-1002",
+        "issue": "explain ls command",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "11:56 AM"
+    },
+    {
+        "ticket_id": "INC-1003",
+        "issue": "explain ls command",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "11:56 AM"
+    },
+    {
+        "ticket_id": "INC-1004",
+        "issue": "explain ls command",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "11:56 AM"
+    },
+    {
+        "ticket_id": "INC-1005",
+        "issue": "explain ls command",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "11:56 AM"
+    },
+    {
+        "ticket_id": "INC-1006",
+        "issue": "explain ls command",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "11:56 AM"
+    },
+    {
+        "ticket_id": "INC-1007",
+        "issue": "wifi is not working",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "12:25 PM"
+    },
+    {
+        "ticket_id": "INC-1008",
+        "issue": "wifi is not working",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "12:28 PM"
+    },
+    {
+        "ticket_id": "INC-1009",
+        "issue": "wifi is not working",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "12:30 PM"
+    },
+    {
+        "ticket_id": "INC-1010",
+        "issue": "wifi is working",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "12:39 PM"
+    },
+    {
+        "ticket_id": "INC-1011",
+        "issue": "wifi is not working",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "12:48 PM"
+    },
+    {
+        "ticket_id": "INC-1012",
+        "issue": "wifi is not working",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "12:58 PM"
+    },
+    {
+        "ticket_id": "INC-1013",
+        "issue": "wifi is not working",
+        "description": "",
+        "priority": "Low",
+        "department": "IT Support",
+        "status": "Open",
+        "created_date": "22-Jul-2026",
+        "created_time": "02:49 PM"
+    }
+]

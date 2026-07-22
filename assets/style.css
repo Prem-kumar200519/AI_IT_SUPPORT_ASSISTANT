@@ -1,0 +1,111 @@
+/* ===========================
+   Main Application
+=========================== */
+
+.stApp{
+    background-color:#0E1117;
+}
+
+/* ===========================
+   Main Title
+=========================== */
+
+.main-title{
+    font-size:42px;
+    font-weight:bold;
+    color:#4CAF50;
+}
+
+.sub-title{
+    font-size:18px;
+    color:#AAB2C0;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card{
+    background:#161B22;
+    padding:18px;
+    border-radius:12px;
+    border:1px solid #30363D;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+section[data-testid="stSidebar"]{
+    background:#161B22;
+}
+
+section[data-testid="stSidebar"] *{
+    color:white;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.stButton > button{
+    width:100%;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* ===========================
+   Textbox
+=========================== */
+
+.stTextInput input{
+    border-radius:10px;
+}
+
+/* ===========================
+   File Upload
+=========================== */
+
+[data-testid="stFileUploader"]{
+    border:2px dashed #3B82F6;
+    border-radius:10px;
+    padding:10px;
+}
+
+/* ===========================
+   Sidebar Radio Buttons
+=========================== */
+
+div[role="radiogroup"] label {
+    font-size: 18px !important;
+    font-weight: 600;
+    padding: 8px 6px;
+}
+
+div[role="radiogroup"] label:hover {
+    background-color: #1E293B;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+/* Sidebar headings */
+
+section[data-testid="stSidebar"] h1{
+    font-size:32px;
+}
+
+section[data-testid="stSidebar"] h2{
+    font-size:24px;
+}
+
+section[data-testid="stSidebar"] h3{
+    font-size:22px;
+}
+
+/* Success box */
+
+section[data-testid="stSidebar"] .stAlert{
+    font-size:18px;
+    font-weight:bold;
+}

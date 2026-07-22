@@ -1,0 +1,294 @@
+====================================================
+Issue: Disk Space Full
+====================================================
+
+Symptoms:
+- Cannot save files
+- Installation fails
+- "No space left on device"
+
+Cause:
+The storage partition has reached its limit.
+
+Diagnosis:
+
+Check disk usage
+
+Command:
+df -h
+
+Find large folders
+
+Command:
+du -sh *
+
+Solution:
+
+1. Delete unnecessary files.
+2. Empty Trash.
+3. Remove old log files.
+4. Remove unused packages.
+
+----------------------------------------------------
+
+====================================================
+Issue: Permission Denied
+====================================================
+
+Symptoms:
+
+Permission denied error while opening, editing or executing a file.
+
+Diagnosis:
+
+Check permissions.
+
+Command:
+
+ls -l
+
+Solution:
+
+Use chmod to change permissions.
+
+Example:
+
+chmod 755 filename
+
+Or change ownership.
+
+Example:
+
+chown username filename
+
+----------------------------------------------------
+
+====================================================
+Issue: SSH Connection Refused
+====================================================
+
+Symptoms:
+
+SSH login fails.
+
+Diagnosis:
+
+Check SSH service.
+
+Command:
+
+systemctl status ssh
+
+Solution:
+
+Start the SSH service.
+
+Command:
+
+systemctl start ssh
+
+Restart SSH.
+
+Command:
+
+systemctl restart ssh
+
+----------------------------------------------------
+
+====================================================
+Issue: Internet Not Working
+====================================================
+
+Symptoms:
+
+Cannot ping websites.
+
+Diagnosis:
+
+Check IP address.
+
+Command:
+
+ip addr
+
+Check internet.
+
+Command:
+
+ping google.com
+
+Solution:
+
+Restart Network Manager.
+
+Command:
+
+systemctl restart NetworkManager
+
+----------------------------------------------------
+
+====================================================
+Issue: High CPU Usage
+====================================================
+
+Symptoms:
+
+Computer becomes slow.
+
+Diagnosis:
+
+Check CPU usage.
+
+Command:
+
+top
+
+or
+
+htop
+
+Solution:
+
+Identify high CPU process.
+
+Kill unnecessary process.
+
+Command:
+
+kill PID
+
+----------------------------------------------------
+
+====================================================
+Issue: High Memory Usage
+====================================================
+
+Symptoms:
+
+Applications freeze.
+
+Diagnosis:
+
+Check RAM.
+
+Command:
+
+free -h
+
+or
+
+top
+
+Solution:
+
+Close unnecessary applications.
+
+Restart memory intensive services.
+
+----------------------------------------------------
+
+====================================================
+Issue: Disk Permission Problem
+====================================================
+
+Symptoms:
+
+Cannot copy files.
+
+Diagnosis:
+
+Check directory permissions.
+
+Command:
+
+ls -ld foldername
+
+Solution:
+
+Change directory permission.
+
+Command:
+
+chmod -R 755 foldername
+
+----------------------------------------------------
+
+====================================================
+Issue: Service Failed
+====================================================
+
+Symptoms:
+
+Apache, MySQL or another service does not start.
+
+Diagnosis:
+
+Check service status.
+
+Command:
+
+systemctl status service_name
+
+View logs.
+
+Command:
+
+journalctl -xe
+
+Solution:
+
+Restart service.
+
+Command:
+
+systemctl restart service_name
+
+----------------------------------------------------
+
+====================================================
+Issue: Package Installation Failed
+====================================================
+
+Symptoms:
+
+apt install returns errors.
+
+Diagnosis:
+
+Update package list.
+
+Command:
+
+sudo apt update
+
+Solution:
+
+Upgrade packages.
+
+Command:
+
+sudo apt upgrade
+
+----------------------------------------------------
+
+====================================================
+Issue: File Not Found
+====================================================
+
+Symptoms:
+
+No such file or directory.
+
+Diagnosis:
+
+Verify file location.
+
+Command:
+
+pwd
+
+ls
+
+Solution:
+
+Navigate to the correct directory before running the command.
