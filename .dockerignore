@@ -1,0 +1,16 @@
+venv/
+.git/
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+chroma_db/
+tickets.json
+
+.vscode/
+
+*.log
+
+.env
