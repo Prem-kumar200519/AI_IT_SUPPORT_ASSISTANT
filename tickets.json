@@ -128,5 +128,15 @@
         "status": "Open",
         "created_date": "22-Jul-2026",
         "created_time": "02:49 PM"
+    },
+    {
+        "ticket_id": "INC-1014",
+        "issue": "wifi is not working",
+        "description": "",
+        "priority": "Low",
+        "department": "Network",
+        "status": "Open",
+        "created_date": "24-Jul-2026",
+        "created_time": "06:42 AM"
     }
 ]
