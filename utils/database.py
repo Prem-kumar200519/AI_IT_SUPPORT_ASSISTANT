@@ -2,7 +2,7 @@ import os
 
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
-from langchain_ollama import OllamaEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 load_dotenv()
 
@@ -12,14 +12,9 @@ def load_database():
     Load the Chroma Vector Database.
     """
 
-    ollama_host = os.getenv(
-        "OLLAMA_HOST",
-        "http://localhost:11434"
-    )
-
-    embeddings = OllamaEmbeddings(
-        model="nomic-embed-text",
-        base_url=ollama_host
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="models/gemini-embedding-001",
+        google_api_key=os.getenv("GEMINI_API_KEY")
     )
 
     db = Chroma(
@@ -27,5 +22,4 @@ def load_database():
         embedding_function=embeddings
     )
 
-    return db
     return db

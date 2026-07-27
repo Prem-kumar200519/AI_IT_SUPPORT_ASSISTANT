@@ -6,8 +6,10 @@ from langchain_community.document_loaders import (
     Docx2txtLoader
 )
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_ollama import OllamaEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from dotenv import load_dotenv
 from langchain_chroma import Chroma
+load_dotenv()
 
 # -----------------------------
 # Configuration
@@ -61,8 +63,9 @@ print(f"Total chunks created: {len(chunks)}")
 # -----------------------------
 # Create embedding model
 # -----------------------------
-embedding_model = OllamaEmbeddings(
-    model="nomic-embed-text"
+embedding_model = GoogleGenerativeAIEmbeddings(
+    model="models/gemini-embedding-001",
+    google_api_key=os.getenv("GEMINI_API_KEY")
 )
 
 # -----------------------------
