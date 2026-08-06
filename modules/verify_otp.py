@@ -50,6 +50,15 @@ def show():
             connection.commit()
             connection.close()
 
+            log_registered_user(
+            full_name=user["full_name"],
+            email=user["email"],
+            username=user["username"],
+            password=user["password"],
+            role="Employee",
+            status="Active"
+            )
+
             # Clear temporary registration data
             del st.session_state.register_user
             del st.session_state.generated_otp
