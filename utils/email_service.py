@@ -1,33 +1,46 @@
 import os
-import smtplib
-
-from email.message import EmailMessage
+import requests
 from dotenv import load_dotenv
 
 load_dotenv()
 
+BREVO_API_KEY = os.getenv("BREVO_API_KEY")
 
-EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+print("BREVO API KEY:", BREVO_API_KEY)
 
 
 def send_email(receiver_email, subject, body):
 
-    message = EmailMessage()
+    url = "https://api.brevo.com/v3/smtp/email"
 
-    message["Subject"] = subject
-    message["From"] = EMAIL_ADDRESS
-    message["To"] = receiver_email
+    headers = {
+        "accept": "application/json",
+        "api-key": BREVO_API_KEY,
+        "content-type": "application/json"
+    }
 
-    message.set_content(body)
+    payload = {
+        "sender": {
+            "name": "AI IT Support Assistant",
+            "email": "itsmeprem200519@gmail.com"
+        },
+        "to": [
+            {
+                "email": receiver_email
+            }
+        ],
+        "subject": subject,
+        "textContent": body
+    }
 
-    with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
+    response = requests.post(
+        url,
+        headers=headers,
+        json=payload
+    )
+    
+    print("Status Code:", response.status_code)
+    print("Response:", response.text)
 
-        smtp.starttls()
-
-        smtp.login(
-            EMAIL_ADDRESS,
-            EMAIL_PASSWORD
-        )
-
-        smtp.send_message(message)
+    if response.status_code not in [200, 201]:
+        raise Exception(response.text)
