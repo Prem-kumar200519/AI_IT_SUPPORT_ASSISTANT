@@ -5,3 +5,4 @@ chroma_db/
 *.log
 .env
 .streamlit/secrets.toml
+database/users.db
