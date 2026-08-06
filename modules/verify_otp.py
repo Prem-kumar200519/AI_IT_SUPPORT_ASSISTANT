@@ -2,6 +2,7 @@ import sqlite3
 import streamlit as st
 
 from utils.otp_manager import verify_otp
+from utils.registration_logger import log_registered_user
 
 DATABASE = "database/users.db"
 
