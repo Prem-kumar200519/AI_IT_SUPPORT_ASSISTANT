@@ -6,15 +6,18 @@ import streamlit as st
 
 from modules import dashboard
 from modules import ai_chat
+from modules import create_ticket
 from modules import log_analyzer
 from modules import knowledge_base
 from modules import system_monitor
 from modules import about
-from modules import view_tickets
+from modules import my_tickets
 from utils.auth_database import initialize_database
+from utils.ticket_database import initialize_ticket_database
 from modules import login
 from modules import register
 from modules import verify_otp
+from modules import ticket_details
 # ----------------------------
 # Import Utilities
 # ----------------------------
@@ -60,6 +63,7 @@ if "page" not in st.session_state:
 # ----------------------------
 
 initialize_database()
+initialize_ticket_database()
 
 llm = load_llm()
 db = load_database()
@@ -106,7 +110,9 @@ else:
 
             "🖥️ System Monitor",
 
-            "📋 View Tickets",
+            "🎫 Create Ticket",
+
+            "📋 My Tickets",
 
             "ℹ️ About",
 
@@ -129,8 +135,14 @@ else:
     elif page == "🖥️ System Monitor":
         system_monitor.show()
 
-    elif page == "📋 View Tickets":
-        view_tickets.show()
+    elif page == "🎫 Create Ticket":
+        create_ticket.show()
+
+    elif page == "📋 My Tickets":
+        my_tickets.show()
+
+    elif st.session_state.page == "ticket_details":
+        ticket_details.show()
 
     elif page == "ℹ️ About":
         about.show()
